@@ -6,7 +6,7 @@
 // License: MIT
 // Repository: https://github.com/erikodes/nodge-ui
 //
-// Custom styles to enhance the default UI of Ionic Framework.
+// Custom styles to improve the default UI of Ionic Framework.
 // =============================================================
 
 // ==================== BASE STYLES ====================
@@ -154,12 +154,12 @@ nodge-icon {
 ion-input,
 ion-textarea,
 ion-select {
-
+    width: 100%;
     --placeholder-color: var(--ion-color-medium) !important;
 
     .native-wrapper {
         background: var(--ng-form-background) !important;
-        border: 1px solid var(--ng-border-color) !important;
+        // border: 1px solid var(--ng-border-color) !important;
         box-shadow: inset 0 0 0 1px color(display-p3 0 0 0/.122), 0 2px 2px 0 color(display-p3 0 0 0/.05);
         border-radius: 12px !important;
     }
@@ -211,12 +211,7 @@ ion-select {
         opacity: 0.58 !important;
     }
 
-    .select-wrapper-inner {
-        width: 100% !important;
-    }
-
     &::part(container) {
-        border: 1px solid red;
         border-radius: 12px;
         padding: 12px;
         width: 100%;
@@ -224,18 +219,18 @@ ion-select {
 }
 
 ion-searchbar {
-    width: 100% !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-    display: inline !important;
+    // width: 100% !important;
+    // margin: 0 !important;
+    // padding: 0 !important;
+    // display: inline !important;
 
     input {
-        height: 50px !important;
-        padding: 12px 16px !important;
+        // height: 50px !important;
+        // padding: 16px !important;
+        padding: 15.5px 16px !important;
         padding-left: 45px !important;
-        backdrop-filter: blur(5px) !important;
-        box-shadow: inset 0 0 0 1px color(display-p3 0 0 0/.122), 0 2px 2px 0 color(display-p3 0 0 0/.05) !important;
+        // backdrop-filter: blur(5px) !important;
+        // box-shadow: inset 0 0 0 1px color(display-p3 0 0 0/.122), 0 2px 2px 0 color(display-p3 0 0 0/.05) !important;
     }
 
     ion-icon {
@@ -376,9 +371,9 @@ ion-button {
         --box-shadow: inset 0 0 0 1px color(display-p3 0 0 0/.122), 0 2px 2px 0 color(display-p3 0 0 0/.05) !important;
     }
 
-    &.button-disabled {
-        --background: var(--ion-color-light-tint) !important;
-    }
+    // &.button-disabled {
+    //     --background: var(--ion-color-light-tint) !important;
+    // }
 
     &[fill='clear'] {
         --border-radius: 0 !important;
@@ -429,8 +424,8 @@ ion-footer {
     line-height: initial !important;
 
     ion-toolbar {
-        --padding-start: 16px;
-        --padding-end: 16px;
+        --padding-start: 8px;
+        --padding-end: 8px;
         --background: white !important;
 
         &.ion-no-border {
@@ -461,10 +456,10 @@ ion-footer {
             }
 
             .button-solid {
-                --padding-start: 10px !important;
-                --padding-end: 10px !important;
-                --padding-top: 10px !important;
-                --padding-bottom: 10px !important;
+                // --padding-start: 10px !important;
+                // --padding-end: 10px !important;
+                // --padding-top: 10px !important;
+                // --padding-bottom: 10px !important;
             }
         }
 
@@ -1038,13 +1033,6 @@ dropdown-popover {
     ion-modal {
         --height: 100% !important;
         --border-radius: 0;
-    }
-
-    ion-content {
-        // --padding-start: 16px;
-        // --padding-end: 16px;
-        // --padding-top: 16px;
-        // --padding-bottom: 16px;
     }
 
     .inner-content {

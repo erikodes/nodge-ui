@@ -149,6 +149,16 @@ nodge-icon {
     border: none !important;
 }
 
+.cursor {
+    &-pointer {
+        cursor: pointer !important;
+    }
+
+    &-default {
+        cursor: default !important;
+    }
+}
+
 // ================= FORMS & INPUTS ===================
 
 ion-input,

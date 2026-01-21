@@ -1,0 +1,3 @@
+[submodule "packages/nodge-ui"]
+	path = packages/nodge-ui
+	url = git@github.com:erikodes/nodge-ui.git

@@ -169,7 +169,7 @@ ion-select {
 
     .native-wrapper {
         background: var(--ng-form-background) !important;
-        // border: 1px solid var(--ng-border-color) !important;
+        border: 1px solid var(--ng-form-border) !important;
         box-shadow: inset 0 0 0 1px color(display-p3 0 0 0/.122), 0 2px 2px 0 color(display-p3 0 0 0/.05);
         border-radius: 12px !important;
     }
@@ -592,9 +592,9 @@ ion-modal {
         justify-content: flex-end;
     }
 
-    .inner-content {
-        background: var(--ion-color-light);
-    }
+    // .inner-content {
+    //     background: var(--ion-color-light);
+    // }
 }
 
 ion-popover {

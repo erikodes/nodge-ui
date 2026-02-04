@@ -581,8 +581,7 @@ ion-modal {
 
     &.modal-sheet {
 
-        &::part(content),
-        .inner-content {
+        &::part(content) {
             padding-top: 40px;
             background: var(--ng-modal-background) !important;
         }
@@ -607,9 +606,9 @@ ion-modal {
         justify-content: flex-end;
     }
 
-    // .inner-content {
-    //     background: var(--ion-color-light);
-    // }
+    .inner-content {
+        background: var(--ng-modal-background) !important;
+    }
 }
 
 ion-popover {

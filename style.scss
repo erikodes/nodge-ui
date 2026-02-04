@@ -581,7 +581,8 @@ ion-modal {
 
     &.modal-sheet {
 
-        &::part(content) {
+        &::part(content),
+        .inner-content {
             padding-top: 40px;
             background: var(--ng-modal-background) !important;
         }

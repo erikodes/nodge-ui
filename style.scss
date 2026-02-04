@@ -172,6 +172,7 @@ ion-select {
         border: 1px solid var(--ng-form-border) !important;
         box-shadow: inset 0 0 0 1px color(display-p3 0 0 0/.122), 0 2px 2px 0 color(display-p3 0 0 0/.05);
         border-radius: 12px !important;
+        padding-right: 12px !important;
     }
 
     .input-bottom {
@@ -239,8 +240,15 @@ ion-searchbar {
         // padding: 16px !important;
         padding: 15.5px 16px !important;
         padding-left: 45px !important;
-        // backdrop-filter: blur(5px) !important;
+        backdrop-filter: blur(5px) !important;
         // box-shadow: inset 0 0 0 1px color(display-p3 0 0 0/.122), 0 2px 2px 0 color(display-p3 0 0 0/.05) !important;
+        box-shadow: inset 0 0 0 1px color(display-p3 0 0 0/.122), 0 2px 2px 0 color(display-p3 0 0 0/.05) !important;
+        transition: 0.5s ease all !important;
+
+        &:focus {
+            background: var(--ng-form-background) !important;
+
+        }
     }
 
     ion-icon {
@@ -294,7 +302,8 @@ ion-select {
     background: var(--ng-form-background) !important;
     border-radius: 12px;
     min-height: 50px !important;
-    box-shadow: inset 0 0 0 1px color(display-p3 0 0 0/.122), 0 2px 2px 0 color(display-p3 0 0 0/.05);
+    border: 1px solid var(--ng-form-border) !important;
+    box-shadow: inset 0 0 0 1px color(display-p3 0 0 0/.122), 0 2px 2px 0 color(display-p3 0 0 0/.05) !important;
 
     &::part(container) {
 
@@ -389,6 +398,11 @@ ion-button {
         --border-radius: 0 !important;
         --padding-start: 0 !important;
         --padding-end: 0;
+    }
+
+    &[size='tiny'] {
+        --padding-top: 0;
+        --padding-bottom: 0;
     }
 
     &[size='small'] {

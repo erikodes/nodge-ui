@@ -941,7 +941,7 @@ table {
 
     tbody {
         tr {
-            background-color: #fff;
+            background-color: var(--ion-color-light);
         }
 
         tr:nth-child(even) {

@@ -331,7 +331,6 @@ ion-checkbox {
 ion-toggle {
     --handle-height: 20px;
     --handle-width: 20px;
-    --track-background: var(--ion-color-light-shade);
     font-size: 16px;
     font-weight: 500;
 
@@ -449,9 +448,8 @@ ion-footer {
     line-height: initial !important;
 
     ion-toolbar {
-        --padding-start: 8px;
-        --padding-end: 8px;
-        --background: white !important;
+        --padding-start: 16px;
+        --padding-end: 16px;
 
         &.ion-no-border {
             --border-color: transaprent !important;
@@ -580,6 +578,12 @@ ion-modal {
 
     // }
 
+    &::part(content) {
+        border: 1px solid var(--ion-color-light-tint);
+        opacity: 1;
+        box-shadow: rgba(0, 0, 0, 0.48) 0px 8px 28px -6px, rgba(0, 0, 0, 0.64) 0px 18px 88px -4px;
+    }
+
     &.modal-sheet {
 
         &::part(content) {
@@ -619,13 +623,12 @@ ion-popover {
     }
 
     &::part(content) {
-        // background-color: var(--ion-color-light-shade) !important;
-        // border: 1px solid var(--ion-color-light-tint) !important;
-        margin-right: 16px !important;
+        background-color: var(--ion-color-light) !important;
+        border: 1px solid var(--ion-color-light-tint) !important;
     }
 
     ion-list {
-        // background: var(--ion-color-light-shade) !important;
+        background: var(--ion-color-light) !important;
     }
 }
 
@@ -1010,7 +1013,7 @@ dropdown-popover {
 
 // ======== RESPONSIVE & MEDIA QUERIES ===============
 
-@media (min-width: 992px) {
+@media (min-width: 767px) {
     ion-header ion-toolbar {
         --padding-top: 16px;
         --padding-bottom: 16px;
@@ -1054,7 +1057,7 @@ dropdown-popover {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
     ion-modal {
         --height: 100% !important;
         --border-radius: 0;

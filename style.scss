@@ -852,7 +852,7 @@ ion-segment {
     margin: unset;
     width: min-content;
     box-shadow: inset 0 0 0 1px color(display-p3 0 0 0/.122), 0 2px 2px 0 color(display-p3 0 0 0/.05) !important;
-    border-radius: var(--ng-border-radius) !important;
+    border-radius: 10px !important;
 
     ion-segment-button {
         text-transform: none;
@@ -862,7 +862,7 @@ ion-segment {
         --border-width: 0 !important;
         border: 3px solid transparent;
         width: max-content;
-        --border-radius: var(--ng-border-radius) !important;
+        --border-radius: 10px !important;
     }
 }
 
